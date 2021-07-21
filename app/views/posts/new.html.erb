@@ -1,0 +1,25 @@
+<%= form_with(model: @post, local: true, html: { id: 'create_posts'}) do |form| %>
+
+<div> 
+    <%= form.label :title, requiered: true %>
+    <br />
+    <%= form.text_field :title, requiered: true %>
+</div>
+
+<div> 
+    <%= form.label :image_url, requiered: true%>
+    <br />
+    <%= form.text_field :image_url, requiered: true%>
+</div>
+
+<div> 
+    <%= form.label :content, requiered: true%>
+    <br />
+    <%= form.text_area :content, requiered: true%>
+</div>
+
+<div>
+    <%= form.submit "Guardar"%>
+</div>
+
+<% end %>
